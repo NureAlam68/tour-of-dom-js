@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header id="header-section">
+        <h1>DOM: Document Object Model.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sequi expedita provident vero consequatur exercitationem modi suscipit, sed nemo dolorum molestiae sit qui assumenda dolore laboriosam. Optio eius error amet.
+        Quod unde dicta ratione quaerat atque repudiandae, id ipsum distinctio est quos, quasi cumque numquam sapiente doloribus doloremque. Nostrum atque saepe assumenda exercitationem, quos magnam ipsam eveniet sapiente quibusdam voluptate!
+        Ipsum nesciunt illum illo inventore ab quos asperiores tempora at autem nisi. Fugit, deserunt, obcaecati corrupti voluptatibus perspiciatis, voluptate nesciunt laudantium nulla accusantium numquam quibusdam accusamus quidem iste. A, vitae!</p>
+    </header>
+    <main id="main-container">
+        <section id="jalali">
+            <h1 id="title-one" class="some-class random">My Awesome DOM de baba</h1>
+            <ul>
+                <li>Jalali set-1</li>
+                <li>Jalali set-2</li>
+                <li>Jalali set-3</li>
+                <li>Jalali set-4</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="title-two">Fruits are all not exist....</h1>
+            <ul>
+                <li class="fruits-list">Bpple</li>
+                <li class="fruits-list">Cpple</li>
+                <li class="fruits-list">Dpple</li>
+                <li class="fruits-list">Apple</li>
+            </ul>
+        </section>
+        <section class="place-list">
+            <h1 id="title-three">
+                Place I like to visit....
+            </h1>
+            <ul>
+                <li>USA</li>
+                <li>London</li>
+                <li>Turkey</li>
+                <li id="germany">Germany</li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection); 
+        for(let li of liCollection) {
+            // console.log(li);
+            // console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for(let h1 of allHeadings) {
+            // console.log(h1.innerText);
+        }
+
+        const fruits = document.getElementsByClassName('fruits-list');
+        for(let fruit of fruits) {
+            // console.log(fruit.innerText)
+        }
+
+        let someLi = document.querySelectorAll('.place-list li');
+        for(let li of someLi) {
+            // console.log(li.innerText);
+        }
+    </script>
+</body>
+</html>

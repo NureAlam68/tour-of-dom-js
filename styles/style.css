@@ -1,0 +1,31 @@
+h1 {
+    color: blue;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+ul > li {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.fruits-list {
+    color: rgb(223, 35, 176);
+}
+
+p {
+    color: rgb(31, 82, 105);
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.place-list li {
+    color: rgb(57, 192, 192);
+}
